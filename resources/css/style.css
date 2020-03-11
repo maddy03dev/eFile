@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
+.chunky-buttons{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  color: #C7e3f6;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
 body {
   border: 0;
   margin: 25px;
@@ -10,8 +23,10 @@ body {
 h1 {
   text-align: center;
   margin: 25px;
-  display: block;
+  display: grid;
+  grid-template-rows: 1, 200px;
   font-size: 18px;
+  font-weight: bold;
 }
 .navbar {
   display: grid;
@@ -77,5 +92,5 @@ input {
 }
 div {
   display: grid;
-  justify-items: space-evenly;
+  
 }
