@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  border: 0;
+  margin: 25px;
+  background-color: aliceblue;
+  font-family: ub
+}
+
+h1 {
+  text-align: center;
+  margin: 25px;
+  display: block;
+  font-size: 18px;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 50px;
+  background-color: #085487;
+  color: #C7e3f6;
+  font-family: Arial;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  align-items: center;
+  justify-items: center;
+}
+
+a {
+  color: #C7e3f6;
+}
+.navbar a:hover {
+  text-shadow: 0px 1px 1px #051c2b;
+  color: #ffffff;
+  font-weight: Bolder;
+}
+main {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: repeat(8, 300px);
+  
+}
+
+/*.grid-container {
+  display: grid;
+  background-color: whitesmoke;
+  grid-template-columns: auto auto auto;
+}
+
+#flexend {
+
+}
+
+#center {
+
+}
+
+#spacearound {
+
+}
+
+#spacebetween {
+
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Applicant Intake Forms</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="This page is a webpage to learn html 5">
+    <meta name="author" content="Maddy Edwards">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/css/style.css"/ type="text/css">
+    </head>
+    <body>
+
+      <div class="container">
+        <!-- Navbar section -->
+        <nav class="navbar">
+           <a href="LandingPage.html">Dashboard</a>
+           <a href="FairCreditReporting.html">Fair Credit Reporting Act</a>
+           <a href="ApplicantIntakeForms.html">Applicant Information</a>
+           <a href="DocumentUpload.html">Document Upload</a>
+          
+        </nav>
+
+      <!--Header beneath the navigation
+      <header class="header">Please complete within # of days
+      </header>-->
+      <!--The beginning of data entry-->
+    <form action="C:\Users\Maddy Edwards\Documents\projects\DevProject" method="post">
+
+    
+    <main>
+     |<!-- <fieldset id="ApplicantInformation"><legend id="AppInfoLegend" class="legend-info">APPLICANT INFORMATION</legend>-->
+        <section id="ApplicantIntakeForms">
+        <!--<div class="grid-container" id="AIF">-->
+            <div class="grid-item1 column13">
+              <label>First Name</label>
+            </div>
+            <div class="grid-item2">
+              <input name="AifFirstName" id="AifFirstName" type="text" required="required" />
+            </div>
+            <div class="grid-item3 column13">
+              <label>Middle Name</label>
+            </div>
+            <div class="grid-item4">
+              <input name="AifMiddleName" id="AifMiddleName" type="text" />
+            </div>
+            <div class="grid-item5 column13">
+              <label>Last Name</label>
+            </div>
+            <div class="grid-item6">
+              <input name="AifLastName" id="AifLastName" type="text" required="required" />
+            </div>
+            <div class="grid-item7 column13">
+              <label>Suffix</label>
+            </div>
+            <div class="grid-item8">
+              <input name="AifSuffix" id="AifSuffix" type="text" />
+            </div>
+            <div class="grid-item9 column13">
+              <label>Personal Email Address</label>
+            </div>
+            <div class="grid-item10">
+              <input name="AifPersonalEmailAddress" id="AifPersonalEmailAddress" type="email" required="required" />
+            </div>
+            <div class="grid-item11 column13">
+              <label>Street 1</label>
+            </div>
+            <div class="grid-item12">
+              <input name="AifStreet1" id="AifStreet1" type="text" required="required" />
+            </div>
+            <div class="grid-item13 column13">
+              <label>Street 2</label>
+            </div>
+            <div class="grid-item14">
+              <input name="AifStreet2" id="AifStreet2" type="text" />
+            </div>
+            <div class="grid-item15 column13">
+              <label>City</label>
+            </div>
+            <div class="grid-item16">
+              <input name="AifCity" id="AifCity" type="text" required="required" />
+            </div>
+            <div class="grid-item17 column13">
+              <label>Country</label>
+            </div>
+            <div class="custom-select grid-item18">
+              <select class="lookup ui search dropdown" name="AifCountry" id="AifCountry">
+                <option value="">Country</option>
+                <option value="United States">United States</option>
+                <option value="England">England</option>
+                <option value="France">France</option>
+                <option value="Peru">Peru</option>
+              </select>
+            </div>
+            <div class="grid-item19 column13">
+              <label>Zip Code</label>
+            </div>
+            <div class="grid-item20">
+              <input name="AifZipCode" id="AifZipCode" type="number" required="required" /><br />
+            </div>
+            <div class="grid-item21 column13">
+              <label>Phone Number</label>
+            </div>
+            <div class="grid-item22">
+              <input name="AifPhoneNumber" id="AifPhoneNumber" type="number" maxlength="10" required="required"/><br />
+            </div>
+            <div class="grid-item23 column13">
+              <label>Date of Birth</label>
+            </div>
+            <div class="grid-item24">
+              <input name="AifDOB" id="AifDOB" type="date" required="required" /><br />
+            </div>
+            <div class="grid-item25 column13">
+              <label>Are you a U.S. Citizen?</label>
+            </div>
+            <div class="grid-item26">
+              <input type="radio" name="AifUsCitizen" value="Yes" />Yes
+              <input type="radio" name="AifUsCitizen" value="No" />No
+            </div>
+            <div class="gird-item28 column13">
+              <label>Place of Birth</label>
+            </div>
+            <div class="custom-select grid-item29 dropdown"> 
+              <select class="lookup" name="AifPOBCountry" id="AifPOBCountry">
+                  <option value="United States">United States</option>
+                  <option value="England">England</option>
+                  <option value="France">France</option>
+                  <option value="Peru">Peru</option>
+              </select>
+            </div>
+            <div class="grid-item30 column13">
+              <label>Place of Birth City</label>
+            </div>
+            <div class="grid-item31">
+              <input name="AifPOBCity" id="AifPOBCity" type="text" required="required"/>
+            </div>
+          <!--</div>-->
+          </section>
+        </fieldset>
+    <br />
+      <input type="submit" value="Submit" id='submit' name='submit'/>
+      </form>
+      <script>
+          var x, i, j, selElmnt, a, b, c;
+          /*look for any elements with the class "custom-select":*/
+          x = document.getElementsByClassName("custom-select");
+          for (i = 0; i < x.length; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < selElmnt.length; j++) {
+              /*for each option in the original select element,
+              create a new DIV that will act as an option item:*/
+              c = document.createElement("DIV");
+              c.innerHTML = selElmnt.options[j].innerHTML;
+              c.addEventListener("click", function(e) {
+                  /*when an item is clicked, update the original select box,
+                  and the selected item:*/
+                  var y, i, k, s, h;
+                  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                  h = this.parentNode.previousSibling;
+                  for (i = 0; i < s.length; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                      s.selectedIndex = i;
+                      h.innerHTML = this.innerHTML;
+                      y = this.parentNode.getElementsByClassName("same-as-selected");
+                      for (k = 0; k < y.length; k++) {
+                        y[k].removeAttribute("class");
+                      }
+                      this.setAttribute("class", "same-as-selected");
+                      break;
+                    }
+                  }
+                  h.click();
+              });
+              b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+              });
+          }
+          function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            for (i = 0; i < y.length; i++) {
+              if (elmnt == y[i]) {
+                arrNo.push(i)
+              } else {
+                y[i].classList.remove("select-arrow-active");
+              }
+            }
+            for (i = 0; i < x.length; i++) {
+              if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+              }
+            }
+          }
+          /*if the user clicks anywhere outside the select box,
+          then close all select boxes:*/
+          document.addEventListener("click", closeAllSelect);
+          </script>
+       </main>
+     </div>
+    </body>
+
+</html>

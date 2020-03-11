@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+body {
+  border: 0;
+  margin: 0px 25px;
+  font-family: ubuntu;
+  background-color: #f1f8fd;
+}
+
+.navbar {
+  background-color: #085487;
+  width: auto;
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-around;
+}
+
+.navbar li{
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #C7e3f6;
+  font-weight: 600;
+  font-family: ubuntu;
+  font-size: 1.25rem;
+  
+}
+.navbar a:hover {
+  text-shadow: 0px 1px 1px #051c2b;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+header {
+  padding: 25px 0px 0px 0px;
+}
+
+/* attempting to make the lookup wider/taller
+.lookup{
+  width:auto;
+  height: auto;
+}*/
+fieldset {
+  margin-top: 50px;
+  width: auto;
+}
+/*
+#ApplicantIntakeForms {
+  width: auto;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}*/
+
+input {
+  /*font-size: 120%;*/
+  color: #5a5854;
+  background-color: #f2f2f2;
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  padding: 5px 5px 5px 5px;
+  background-repeat: no-repeat;
+  background-position: 8px 9px;
+  margin: 1px 0px 1px 0px;
+}
+
+input#submit {
+  color: #C7e3f6;
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #0a68a7;
+  width:100px;
+  font-size: larger;
+}
+
+input#submit:hover {
+  border: 1px solid #a4a4a4;
+  /*border-top: 2px solid #b2b2b2;*/
+  border-bottom: 2px solid #b2b2b2;
+  background-color: #C7e3f6;
+  text-shadow: 0px 1px 1px #051c2b;
+  color: #085487;
+  font-weight: bolder;
+}
+
+/*fieldset#FairCreditReporting {
+  width: auto;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  font-family: Ubuntu;
+}*/
+.legend-info {
+  background-color: #0a68a7;
+  color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font: Ubuntu;
+}
+/*legend#AppInfoLegend {
+  background-color: #0a68a7;
+  color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+}*/
+
+/*section {
+  border-bottom: 1px solid #efefef;
+  margin: 10px;
+  padding-bottom: 10px;
+  width: auto;
+}*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px 10px;
+  margin: 10px;
+  /*justify-items: stretch;*/
+  align-items: center;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  /*font-size: 30px;*/
+  margin: 20px; 
+}
+
+@media only screen and (min-width: 851px){
+  .column13 {
+    justify-self: end;
+    padding: 5px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .grid-container {
+    display:grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    justify-content: left;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display:grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+}
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #bdbdbd;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color:#313131;
+  padding: 8px 16px;
+  /*margin-block: 5px;*/
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #bdbdbd;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
