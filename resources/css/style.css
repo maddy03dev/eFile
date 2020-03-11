@@ -15,7 +15,7 @@ h1 {
 }
 .navbar {
   display: grid;
-  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-columns: repeat(4, auto);
   grid-template-rows: 50px;
   background-color: #085487;
   color: #C7e3f6;
@@ -24,6 +24,7 @@ h1 {
   font-weight: bolder;
   align-items: center;
   justify-items: center;
+  margin-bottom: 10px;
 }
 
 a {
@@ -36,9 +37,14 @@ a {
 }
 main {
   display: grid;
-  grid-template-columns: 250px 250px 250px 250px;
-  grid-template-rows: repeat(8, 300px);
-  
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(8, 50px);
+  justify-items: end;
+  margin-bottom: 10px;
+  /*gap: 10px;*/
+}
+input {
+  justify-items: start !important;
 }
 
 /*.grid-container {
@@ -61,4 +67,15 @@ main {
 
 #spacebetween {
 
+}*/
+:required {
+  justify-content: start;
+  color: tomato;
+  font-weight: bold;
+  border:2px solid tomato;
+  
+}
+div {
+  display: grid;
+  justify-items: space-evenly;
 }
