@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>gridbooty</title>
+  <link href="https://fonts.googleapis.com/css?family=Caveat&family=Cutive+Mono&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/ type="text/css">
+  <title>bootsrap-practice</title>    
+
+  <style>
+      body {
+        background-color: aliceblue;
+      }
+      
+      .grid-block  {
+          background-color: aliceblue;
+          font-weight: bold;
+          min-height: 50px;
+          outline: 12px solid bisque;
+          color: #333;
+      }
+      .navbar {
+        background-color: #085487;
+        color: #C7e3f6;
+      }
+      .nav-pills .nav-link:not(.active) {
+         color: #C7e3f6;
+         font-weight: bolder;
+      }
+    
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: #11466c;
+        font-weight: bolder;
+        text-decoration: underline;
+        text-shadow: 0px 1px 1px #051c2b;
+       }
+      .navbar a:hover {
+        text-shadow: 0px 1px 1px #051c2b;
+        color: #ffffff;
+        text-shadow: 0px 1px 1px #051c2b;
+      }
+  </style>
+</head>
+<!---this body shows code that allows us to make blocks that refer to the sytle in the head and show grid span-->
+
+<body>
+  <div class="container-fluid">
+  
+  <!-- Navbar section -->
+        <nav class="navbar sticky-top nav-pills flex-column flex-sm-row"">
+            <img src="resources/images/CBS Logo.png" width="30" height="30" class="nav-item nav-pills">
+            <ul class="nav nav-pills nav-justify">
+                <li class="nav-item">
+                    <a class="navbar-brand nav-link" href="index.html"> 
+                        <!--<img src="resources/images/ApplicantScreening.jpg" width="30" height="30" class="dinline-block align-top"> -->
+                        Dashboard</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="navbar-brand nav-link" href="FairCreditReporting.html">
+                        Fair Credit Reporting Act</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="navbar-brand nav-link" href="ApplicantIntakeForms.html">
+                        Applicant Information</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="navbar-brand nav-link active" href="AIF Bootstrap.html">
+                        AIF</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="navbar-brand nav-link" href="DocumentUpload.html">
+                        Document Upload</a>
+                 </li>
+           
+           </ul>
+        </nav>
+
+      <!--Header beneath the navigation
+      <header class="header">Please complete within # of days
+      </header>-->
+      <!--The beginning of data entry-->
+    <form action="C:\Users\Maddy Edwards\Documents\projects\DevProject" method="post">
+
+    
+    <main>
+        <form>
+            <br>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="inputFirstName">
+                </div>
+                <div class="form-group col-md-6">
+                <label for="middleName">Middle Name</label>
+                <input type="text" class="form-control" id="inputFirstName">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="inputLastName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="suffix">Suffix</label>
+                  <input type="text" class="form-control" id="inputSuffix">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Maine</option>
+                    <option>Mississippi</option>
+                    <option>Virginia</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" class="form-control" id="inputPhoneNumber">
+                </div>
+                <div class="form-group col-md-3">
+                <label for="dateOfBirth">Date of Birth</label>
+                <input type="text" class="form-control" id="inputDateOfBirth">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputState">US Citizenship</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>US Citizen</option>
+                    <option>Naturalized Citizen</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="inputState">Place of Birth</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                  </select>
+                </div>
+                </div>
+                </form>
+                </form>
+                <div class="form-group col-md-6">
+                  <label for="suffix">Suffix</label>
+                  <input type="text" class="form-control" id="inputSuffix">
+                </div>
+              </div>
+              </div>
+              
+              <br>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+                </div>
+                <div class="input-group-append">
+                <span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+              <label for="applicantIntakeFormsComments">Comments</label>
+              <textarea class="form-control" id="applicantIntakeFormsComments" rows="3"></textarea>
+            </div>
+          </form>
+    <br />
+    <button type="button" class="btn btn-primary btn-lg btn-block">Submit</button>
+    
+      </form>
+      
+       </main>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+
+</html>

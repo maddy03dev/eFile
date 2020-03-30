@@ -7,20 +7,46 @@
     <meta charset="utf-8">
     <meta name="description" content="This page is a webpage to learn html 5">
     <meta name="author" content="Maddy Edwards">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap stuff-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/ type="text/css">
+<!-- boot strap stuff ends here-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/style.css"/ type="text/css">
     </head>
     <body>
 
       <div class="container">
         <!-- Navbar section -->
-        <nav class="navbar">
-           <a href="index.html">Dashboard</a>
-           <a href="FairCreditReporting.html">Fair Credit Reporting Act</a>
-           <a href="ApplicantIntakeForms.html">Applicant Information</a>
-           <a href="DocumentUpload.html">Document Upload</a>
-          
-        </nav>
+  <!-- Navbar section -->
+  <nav class="navbar sticky-top nav-pills flex-column flex-sm-row"">
+    <img src="resources/images/CBS Logo.png" width="30" height="30" class="nav-item nav-pills">
+    <ul class="nav nav-pills nav-justify">
+        <li class="nav-item">
+            <a class="navbar-brand nav-link" href="index.html"> 
+                <!--<img src="resources/images/ApplicantScreening.jpg" width="30" height="30" class="dinline-block align-top"> -->
+                Dashboard</a>
+         </li>
+         <li class="nav-item">
+            <a class="navbar-brand nav-link" href="FairCreditReporting.html">
+                Fair Credit Reporting Act</a>
+         </li>
+         <li class="nav-item">
+            <a class="navbar-brand nav-link" href="ApplicantIntakeForms.html">
+                Applicant Information</a>
+         </li>
+         <li class="nav-item">
+            <a class="navbar-brand nav-link active" href="AIF Bootstrap.html">
+                AIF</a>
+         </li>
+         <li class="nav-item">
+            <a class="navbar-brand nav-link" href="DocumentUpload.html">
+                Document Upload</a>
+         </li>
+   
+   </ul>
+</nav>
 
       <!--Header beneath the navigation
       <header class="header">Please complete within # of days
@@ -141,80 +167,7 @@
     <br />
       <input type="submit" value="Submit" id='submit' name='submit'/>
       </form>
-      <!--<script>
-          var x, i, j, selElmnt, a, b, c;
-          /*look for any elements with the class "custom-select":*/
-          x = document.getElementsByClassName("custom-select");
-          for (i = 0; i < x.length; i++) {
-            selElmnt = x[i].getElementsByTagName("select")[0];
-            /*for each element, create a new DIV that will act as the selected item:*/
-            a = document.createElement("DIV");
-            a.setAttribute("class", "select-selected");
-            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-            x[i].appendChild(a);
-            /*for each element, create a new DIV that will contain the option list:*/
-            b = document.createElement("DIV");
-            b.setAttribute("class", "select-items select-hide");
-            for (j = 1; j < selElmnt.length; j++) {
-              /*for each option in the original select element,
-              create a new DIV that will act as an option item:*/
-              c = document.createElement("DIV");
-              c.innerHTML = selElmnt.options[j].innerHTML;
-              c.addEventListener("click", function(e) {
-                  /*when an item is clicked, update the original select box,
-                  and the selected item:*/
-                  var y, i, k, s, h;
-                  s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                  h = this.parentNode.previousSibling;
-                  for (i = 0; i < s.length; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
-                      s.selectedIndex = i;
-                      h.innerHTML = this.innerHTML;
-                      y = this.parentNode.getElementsByClassName("same-as-selected");
-                      for (k = 0; k < y.length; k++) {
-                        y[k].removeAttribute("class");
-                      }
-                      this.setAttribute("class", "same-as-selected");
-                      break;
-                    }
-                  }
-                  h.click();
-              });
-              b.appendChild(c);
-            }
-            x[i].appendChild(b);
-            a.addEventListener("click", function(e) {
-                /*when the select box is clicked, close any other select boxes,
-                and open/close the current select box:*/
-                e.stopPropagation();
-                closeAllSelect(this);
-                this.nextSibling.classList.toggle("select-hide");
-                this.classList.toggle("select-arrow-active");
-              });
-          }
-          function closeAllSelect(elmnt) {
-            /*a function that will close all select boxes in the document,
-            except the current select box:*/
-            var x, y, i, arrNo = [];
-            x = document.getElementsByClassName("select-items");
-            y = document.getElementsByClassName("select-selected");
-            for (i = 0; i < y.length; i++) {
-              if (elmnt == y[i]) {
-                arrNo.push(i)
-              } else {
-                y[i].classList.remove("select-arrow-active");
-              }
-            }
-            for (i = 0; i < x.length; i++) {
-              if (arrNo.indexOf(i)) {
-                x[i].classList.add("select-hide");
-              }
-            }
-          }
-          /*if the user clicks anywhere outside the select box,
-          then close all select boxes:*/
-          document.addEventListener("click", closeAllSelect);
-          </script>-->
+      
        </main>
      </div>
     </body>

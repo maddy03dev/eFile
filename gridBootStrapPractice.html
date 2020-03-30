@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>gridbooty</title>
+  <link href="https://fonts.googleapis.com/css?family=Caveat&family=Cutive+Mono&display=swap" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/ type="text/css">
+  <title>bootsrap-practice</title>    
+
+  <style>
+      body {
+        background-color: bisque;
+      }
+      
+      .grid-block  {
+          background-color: pink;
+          font-weight: bold;
+          min-height: 50px;
+          outline: 12px solid bisque;
+          color: #333;
+      }
+  </style>
+</head>
+<!---this body shows code that allows us to make blocks that refer to the sytle in the head and show grid span-->
+
+<body>
+  <div class="container-fluid">
+<!--this is full span-->
+    <div class="row">
+      <div class="col-12 grid-block">
+          <p>full-width</p>
+      </div>    
+    </div>
+
+<!--this is half-and-half-->
+  <div class="row">
+    <div class="col-6 grid-block">
+        <p>half-width</p>
+    </div>
+    <div class="col-6 grid-block">
+        <p>half-width</p>
+    </div>
+  </div>
+
+<!--this is 2 blocks of 8 and 4-->
+  <div class="row">
+      <div class="col-8 grid-block">
+          <p>8-block</p>
+      </div>
+      <div class="col-4 grid-block">
+          <p>4-block</p>
+      </div>
+  </div>
+
+<!--this is 3 blocks of 5 and 5 and 2-->
+  <div class="row">
+    <div class="col-5 grid-block">
+        <p>5</p>
+    </div>
+    <div class="col-5 grid-block">
+        <p>5</p>
+    </div>
+    <div class="col-2 grid-block">
+        <p>2</p>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
